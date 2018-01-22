@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Image;
-
+use App\profile;
 class homeController extends Controller
 {
 

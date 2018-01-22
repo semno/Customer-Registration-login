@@ -48,7 +48,7 @@ class registerController extends Controller
         $user->verified = 1;
         $user->email_token = NULL;
         if($user->save()){
-            return 120; //view(‘emailconfirm’,[‘user’=>$user]);
+            return view('site.emailconfirm.emailconfirm',['user'=>$user]);
         }
     }
 

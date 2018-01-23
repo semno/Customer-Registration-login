@@ -32,7 +32,7 @@ class homeController extends Controller
     {
          $user =  auth()->user();
          $photo = $request->file('avatar');
-         $background = Image::canvas(150, 150, '#333');
+         $background = Image::canvas(150, 150, '#fff');
 
         if($photo){
 
